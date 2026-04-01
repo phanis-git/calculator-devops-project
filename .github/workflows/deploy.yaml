@@ -17,5 +17,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            pwd 
-            echo pwd
+            - name: Save PWD
+            run: |
+              CURRENT_DIR=$(pwd)
+              echo "Current directory is $CURRENT_DIR"

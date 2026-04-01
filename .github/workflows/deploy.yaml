@@ -63,11 +63,11 @@ jobs:
             git pull origin main
 
             # Build Docker image
-            docker build -t final-app .
+            sudo docker build -t final-app .
 
             # Stop & remove old container
-            docker stop app || true
-            docker rm app || true
+            sudo docker stop app || true
+            sudo docker rm app || true
 
             # Run new container
-            docker run -d -p 80:80 --name app final-app
+            sudo docker run -d -p 80:80 --name app final-app

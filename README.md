@@ -24,7 +24,7 @@ Application is containerized using Docker and served via Nginx.
 
 ## 🌐 Live Application
 
-http://<your-ec2-public-ip>
+http://100.55.154.56
 
 ## 📂 Repository
 
